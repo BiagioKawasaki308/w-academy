@@ -1,0 +1,767 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W-academy</title> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<style>
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+ li{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+
+h1{
+    margin-bottom: 10px;
+    color:white;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    font-weight: medium;
+}
+
+.p2{
+    color: black;
+    text-align: center;
+}
+
+td{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+.logo-image{
+width: 26px;
+height: 26px;
+border-radius: 50%;
+overflow-x: hidden;
+margin-top: -2px;
+}
+
+img{
+    margin-left: 5px
+}
+section{
+    background-color: green ;
+}
+
+aside{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+nav{
+    margin-top: -15px;
+    margin-bottom: -10px;
+}
+
+hr{
+    margin-top: -10px;
+    margin-bottom: 5px;
+    height: 5px;
+    background-color: black;
+    border: none;
+    position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 600px; /* Modifica la larghezza massima a tua discrezione */
+}
+
+/* Stile per il campo di input della barra di ricerca */
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+/* Stile per la lente di ingrandimento */
+.search-icon {
+  background-color: orange;
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Stile di hover per la lente di ingrandimento */
+.search-icon:hover {
+  background-color: #ff7f00; /* Arancione più scuro in hover */
+}
+
+
+.card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .carouselExampleControls{
+    padding:5%;
+}
+
+table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    td {
+      padding: 10px;
+    }
+    .card {
+  width: 30%; /* Larghezza predefinita per le card */
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+
+.card-body {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-text {
+  white-space: normal;
+}
+
+/* Stili specifici per schermi più piccoli (modalità mobile) */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Larghezza al 100% per farle andare una sotto l'altra */
+  }
+}
+
+.container2 {
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container2 h1 {
+    color: #3AACFF;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.container2 .content {
+    padding: 20px;
+    flex: 1;
+    max-width: 750px; /* Imposta la larghezza massima del contenuto */
+}
+
+.container2 .button-container {
+    text-align: center;
+    padding: 20px;
+    align-self: flex-start;
+}
+
+.container2 p {
+    color: black;
+    text-align: left;
+    margin: 0; /* Rimuovi il margin per impedire che il testo vada troppo a sinistra e si tagli */
+}
+
+
+    
+.section3 {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+.grid-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+.counter {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+.label {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+
+
+        
+.logo-container {
+      display: flex;
+      justify-content: flex-start; /* Allinea i loghi all'inizio della barra */
+      background-color: #fff; /* Colore di sfondo bianco */
+      max-width: 100%; /* Adatta la larghezza massima alla finestra del browser */
+      box-sizing: border-box;
+      padding: 10px; /* Aggiungi spazio tra i loghi */
+      border-bottom: 1px solid #ddd; /* Aggiungi una sottile linea di separazione */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra leggera */
+    }
+
+.logo-scroll {
+      flex-shrink: 0;
+      opacity: 0.7; /* Opacità per rendere i loghi meno prominenti */
+      transition: opacity 0.3s ease;
+      margin-right: 10px; /* Aggiungi spazio tra i loghi */
+      max-width: 100px; /* Larghezza massima per evitare tagli su schermi più piccoli */
+      border-radius: 8px; /* Angoli arrotondati */
+      overflow: hidden; /* Nasconde eventuali overflow all'interno del logo */
+    }
+
+.logo-scroll:last-child {
+      margin-right: 0; /* Rimuovi il margine destro all'ultimo elemento */
+    }
+
+.logo-scroll img {
+      max-width: 100%; /* Adatta la larghezza massima all'elemento padre */
+      height: auto; /* Altezza automatica, mantenendo l'aspetto originale */
+    }
+    body {
+  
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.logo-scroll:hover {
+      opacity: 1;
+    }
+
+@keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Aumenta la velocità di scorrimento regolando la durata dell'animazione */
+.logo-container {
+      animation: scroll 15s linear infinite;
+    }
+
+    /* Stili per gestire la dimensione dei loghi su schermi più piccoli */
+@media (max-width: 768px) {
+      .logo-scroll {
+        max-width: 80px; /* Modifica la larghezza massima per schermi più piccoli */
+      }
+    }
+    /* Footer nero */
+.footer {
+      background-color: #000; /* Colore di sfondo nero */
+      color: #fff; /* Colore del testo bianco */
+      padding: 20px;
+      text-align: center;
+    }
+
+.newsletter-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+.newsletter-input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+.newsletter-button {
+      background-color: #fff;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+.social-icons {
+      margin-top: 20px;
+    }
+
+.social-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+@media (max-width: 768px) {
+      .newsletter-input {
+        flex: 100%;
+      }
+    }
+
+.container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px; /* Aggiunto margine inferiore per separare i container */
+    }
+
+.button-container {
+        margin-top: -15px; /* Aggiunto margine superiore per separare il bottone dal testo */
+        text-align: right; /* Allinea il bottone a destra */
+    }
+
+.button {
+        background: linear-gradient(45deg, #3498db, #2980b9); /* Sfumatura di blu */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px; /* Rendi il bottone stondato */
+        cursor: pointer;
+        margin-left: 10px; /* Aggiunto margine a sinistra per separare il bottone dal testo */
+        font-family: 'Arial', sans-serif; /* Cambia la fonte del testo */
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Aggiunto effetto di transizione */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunto un leggero effetto di ombreggiatura */
+    }
+
+.button:hover {
+        background: linear-gradient(45deg, #2980b9, #3498db); /* Cambia la sfumatura al passaggio del mouse */
+        transform: scale(1.1); /* Aggiungi un effetto di scaling al passaggio del mouse */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta l'ombreggiatura al passaggio del mouse */
+    }
+    
+
+@media only screen and (max-width: 600px) {
+.button {
+            margin-left: 0; /* Rimuovi il margine a sinistra su schermi più piccoli */
+        }
+.button-container {
+            text-align: center; /* Centra il bottone su schermi più piccoli */
+        }
+    }
+
+    a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+a{
+  color: white;
+}
+
+
+#cookie-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 15px 0 0 0;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 9998;
+    }
+
+    #cookie-content {
+      max-width: 300px;
+    }
+
+    #accept-all {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    #close-banner {
+      background-color: #333;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+    }
+</style>
+<button id="cookie-button" onclick="showBanner()">🔒</button>
+
+<div id="cookie-banner">
+  <div id="cookie-content">
+    <h4>Informativa sui cookie e sulla privacy</h4>
+    <p style="color: #000; text-align: left;" >Il nostro sito utilizza i cookie per offrirti la migliore esperienza utente. Accetta tutti i cookie o personalizza le tue preferenze.</p>
+    
+    <label>
+      <input type="checkbox" id="cookie-policy" />
+      Ho letto e accetto la nostra politica sui cookie e la politica sulla privacy.
+    </label>
+
+    <button id="accept-all" onclick="acceptAll()">Accetta tutto</button>
+    <button id="close-banner" onclick="closeBanner()">Chiudi</button>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg" style="background-color: white;" 
+    div class="container-fluid">
+        <img src="./img/logo.png" alt="Bootstrap" width="125" height="64">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" style="margin-left: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+              Percorsi
+            </a>
+            <ul class="dropdown-menu" class='list-inline'>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col" style="text-align: left;">
+                        Diplomati e Laureati
+                        <ul>
+                           <a href="./master.html" ></a><li> master </li></a>
+                            <li>  master universitari</li>
+                            </ul>
+                      </div>
+                      <div class="col" style="text-align: left;">
+                        Lavoratori e Professionisti
+                        <ul>
+                            <li> executive-master </li>
+                            <li> corsi on-demand</li>
+                            </ul>
+                      </div>
+                      <div class="col" style="text-align: left;">
+                        Aziende e Startup
+                        <ul>
+                        <li> masterclass </li>
+                        <li> formazione</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </ul>
+          </li>
+            
+          <a class="nav-link" aria-disabled="true" style="margin-left: 20px;" >Academy</a>
+            <a class="nav-link" aria-disabled="true" style="margin-left: 20px;">Magazine</a>
+            <a class="nav-link" aria-disabled="true" style="margin-left: 20px;">Chi siamo</a>
+            <a href="contattaci.html" class="nav-link" aria-disabled="true" style="margin-left: 20px;">Contatti</a>
+            <a class="navbar-brand" href="/" style="margin-left: 20px;">
+                <div class="logo-image">
+                      <img src="./img/user.png" class="img-fluid">
+                </div>
+          </a>
+      </div>
+    </div>
+</nav>
+<hr>
+<section>
+ <div class="container">
+        <br>
+     <h1 style="text-align: center;">Chi sa fare insegna</h1>
+     <p>Siamo la tua Business School Born Digital che ti insegna a fare, per garantirti crescita professionale con un metodo liquido e formazione pratica</p>
+    <center>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Cerca il percorso migliore per te...">
+            <div class="search-icon">&#128269;</div>
+          </div>
+    </center>
+    </div>
+<br>
+<br>
+
+</section>
+<section style="background-color: #ff7f00;">
+    <br>
+    <br>
+    <div class="container">
+        <h1>Magazine</h1>
+        <p style="text-align: left;">Resta aggiornato sulle iniziative, gli eventi, gli incontri che organizziamo quotidianamente.
+
+        </p>
+    
+        <div class="card-container">
+          <div class="card">
+            <a href="./magazine.html"><img src="./img/immagini-per-sito-34.png" class="card-img-top" alt="Immagine 1"></a>
+            <div class="card-body">
+              <h5 class="card-title">Titolo 1</h5>
+              <p2 class="card-text">Un giorno immerso nel glamour di Guess: un'esperienza formativa indimenticabile per i futuri professionisti del Fashion Business</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./magazine.html"><img src="./img/immagini-per-sito-34.png" class="card-img-top" alt="Immagine 2"></a>
+            <div class="card-body">
+              <h5 class="card-title">Titolo 2</h5>
+              <p2 class="card-text">Un giorno immerso nel glamour di Guess: un'esperienza formativa indimenticabile per i futuri professionisti del Fashion Business</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./magazine.html"><img src="./img/immagini-per-sito-34.png" class="card-img-top" alt="Immagine 3"></a>
+            <div class="card-body">
+              <h5 class="card-title">Titolo 3</h5>
+              <p2 class="card-text">Un giorno immerso nel glamour di Guess: un'esperienza formativa indimenticabile per i futuri professionisti del Fashion Business</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section style="background-color: #3AACFF;">
+        <div class="container">
+            <br>
+            <br>
+            <h1>Percorsi</h1>
+    
+            <!-- Master -->
+            <section2>
+                <div class="container2" style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <h1 style="color: #3AACFF; font-size: 25px; margin: 0; margin-left: 20px; margin-top: 10px;">Master</h1>
+                    <div class="content" style="margin: 0;">
+                        <p style="color: black; text-align: left; margin: 0;">Lezioni pratiche in Live Streaming con manager internazionali, sessioni in presenza all’interno delle aziende più prestigiose e canale on-demand dedicato. Al termine tirocinio formativo e diplomi blockchain.</p>
+                    </div>
+                    <div class="button-container">
+                      <a href="./master.html"><button class="button">Scopri di più</button></a>
+                  </div>
+                </div>
+            
+                <div class="container2" style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 20px;">
+                    <h1 style="color: #3AACFF; font-size: 25px; margin: 0; margin-left: 20px; margin-top: 10px;">Executive Master</h1>
+                    <div class="content" style="margin: 0;">
+                        <p style="color: black; text-align: left; margin: 0;">Acquisisci nuove competenze pratiche, spendibili sin da subito sul mercato del lavoro. Concentrati in pochi weekend. Perfetti per conciliare i diversi impegni della settimana: formazione, lavoro e vita privata.
+
+                        </p>
+                    </div>
+                    <div class="button-container">
+                      <button class="button">Scopri di più</button>
+                  </div>
+                </div>
+            <br>
+                <h1>Corsi on-demand</h1>
+            
+                <div class="container2" style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 20px;">
+                    <h1 style="color: #3AACFF; font-size: 25px; margin: 0; margin-left: 20px; margin-top: 10px;">Con video-referenza</h1>
+                    <div class="content" style="margin: 0;">
+                        <p style="color: black; text-align: left; margin: 0;">Ottieni la tua video referenza e punta ad una crescita professionale con i corsi on-demand: project work con Top Manager che certificano le tue competenze in modo personalizzato ed esclusivo.
+
+                        </p>
+                    </div>
+                    <div class="button-container">
+                <button class="button">Scopri di più</button>
+            </div>
+                </div> 
+                <div class="container2" style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 20px;">
+                    <h1 style="color: #3AACFF; font-size: 25px; margin: 0; margin-left: 20px; margin-top: 10px;">Con contenuti esclusivi</h1>
+                    <div class="content" style="margin: 0;">
+                        <p style="color: black; text-align: left; margin: 0;">Webinar interattivi, dialoghi con esperti, risorse esclusive, per una conoscenza approfondita. Trasforma la tua curiosità in competenza.
+
+                        </p>
+                    </div>
+                    <div class="button-container">
+                      <button class="button">Scopri di più</button>
+                  </div>
+                </div>
+                <br>
+</section>
+<section style="background-color: pink;">
+                <div class="container">
+                    <br>
+                    <h2 style="margin-top: -10px; color: white;">I Nostri Alunni</h2>
+            
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="label">Allievi assunti</div>
+                            <div class="counter" id="counter1">0</div>
+                        </div>
+            
+                        <div class="grid-item">
+                            <div class="label">Alumni</div>
+                            <div class="counter" id="counter2">0</div>
+                        </div>
+            
+                        <div class="grid-item">
+                            <div class="label">Docenti</div>
+                            <div class="counter" id="counter3">0</div>
+                        </div>
+            
+                        <div class="grid-item">
+                            <div class="label">Ore in Diretta</div>
+                            <div class="counter" id="counter4">0</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+              <br>
+</section>
+<section style="background-color: white;">
+              <div class="container">
+              <br>
+              <br>
+              <h1 style="color: #000;">I nostri partners</h1>
+              <div class="logo-container" id="logoContainer">
+              </div>
+                <!-- Aggiungi altri loghi come necessario -->
+              </div>
+</section>
+</div>
+<br>
+<br>
+<div class="footer">
+  <h2>Iscriviti alla nostra Newsletter</h2>
+  <form class="newsletter-form">
+    <input type="email" class="newsletter-input" placeholder="Inserisci la tua email" required>
+    <button type="submit" class="newsletter-button">Iscriviti</button>
+  </form>
+
+  <div class="social-icons">
+    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <!-- Aggiungi altri link e icone social secondo necessità -->
+  </div>
+</div>
+            <!-- Script Bootstrap JavaScript (opzionale, ma richiesto per alcune funzionalità di Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-U8T0JSom6ZvhFVOnhVCLrBy+JfXNHEwlATZ3YwpiyVtLXabEqdJ5PSSjF5EJah/o" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgydDFYGRJN6Injv9F7ByJU+1u4zI9nAtNlWHqzVSq6q5MlZtFk7J11UQJb" crossorigin="anonymous"></script>
+<script>
+  function acceptAll() {
+    document.getElementById("cookie-policy").checked = true;
+    // Qui puoi aggiungere la logica per accettare tutte le altre condizioni, se presenti.
+    closeBanner();
+  }
+
+  function closeBanner() {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  function showBanner() {
+    document.getElementById("cookie-button").style.display = "none";
+    document.getElementById("cookie-banner").style.display = "block";
+  }
+  //
+  const logos = [
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    './img/logo.png',
+    // Aggiungi altri loghi secondo necessità
+  ];
+
+  const logoContainer = document.getElementById('logoContainer');
+
+  // Aggiungi dinamicamente i loghi al documento
+  logos.forEach((logo) => {
+    const logoElement = document.createElement('div');
+    logoElement.classList.add('logo-scroll');
+    logoElement.innerHTML = `<img src="${logo}" alt="Logo">`;
+    logoContainer.appendChild(logoElement);
+  });
+        function animateValue(id, start, end, duration, finalText) {
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var element = document.getElementById(id);
+    
+            function update() {
+                current += increment;
+                element.textContent = current + finalText;
+    
+                if ((increment === 1 && current < end) || (increment === -1 && current > end)) {
+                    requestAnimationFrame(update);
+                }
+            }
+    
+            requestAnimationFrame(update);
+        }
+    
+        setTimeout(function () {
+            animateValue('counter1', 0, 9, 2000, ' su 10');
+            animateValue('counter2', 0, 58000, 2000, ' +');
+            animateValue('counter3', 0, 200, 2000, ' +');
+            animateValue('counter4', 0, 14800, 2000, ' +');
+        }, 500); // Delay the start of the animations
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
